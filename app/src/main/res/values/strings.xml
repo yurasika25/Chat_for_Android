@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Real Chat</string>
+    <string name="next">Головна</string>
+    <string name="go_to_chat">Зайти в чат</string>
+    <string name="exit">Вийти</string>
+    <string name="register">Реєстрація</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="email">Електронна адреса</string>
+    <string name="password">Пароль</string>
+    <string name="sing">Вхід</string>
+    <string name="reg">Реєстрація</string>
+    <string name="login">Увійти</string>
+    <string name="show_password">Показати пароль</string>
+    <string name="yrasika80_gmail_com">Ви ввіишли як: yrasika80@gmail.com</string>
+    <string name="exit_id">вийти</string>
+    <string name="start_chat">увійти в чат</string>
+    <string name="type">Повідомлення…</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Chats</string>
+    <string name="yuri_sika">Yuri Sika</string>
+    <string name="online">у мережі</string>
+    <string name="account">Акаунт</string>
+    <string name="_38096_79_27_303">+38096 79 27 303</string>
+    <string name="settings_phone_change">Натисніть, щоб змінити номер телефону</string>
+    <string name="yuri_sika_name">\@yuri_sika</string>
+    <string name="words_about">Додайте кілька слів про себе</string>
+    <string name="change_name">Редагувати ім\'я</string>
+    <string name="imageview4">imageView4</string>
+    <string name="___">_ _ _ _ _</string>
+    <string name="name_save">Ім\'я (обов\'язково)</string>
+    <string name="surname_save">Прізвище (за бажанням)</string>
+    <string name="pseudo">Псевдонім</string>
+    <string name="your_user_name_pseudo">Ваш псевдонім</string>
+    <string name="about">Про себе</string>
+</resources>

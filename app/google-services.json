@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "148838224783",
+    "firebase_url": "https://testbasakotlin-default-rtdb.firebaseio.com",
+    "project_id": "testbasakotlin",
+    "storage_bucket": "testbasakotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148838224783:android:39a6249828b7fb77ecb1fa",
+        "android_client_info": {
+          "package_name": "com.example.testbasadata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148838224783-kcoqtc8s4fulsv2sgqq94u7o3uf4sjk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7SE1Nbv529vFoiwWRGHcR58K_KpFl1_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148838224783-kcoqtc8s4fulsv2sgqq94u7o3uf4sjk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
