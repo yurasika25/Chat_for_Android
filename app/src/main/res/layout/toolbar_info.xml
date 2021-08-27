@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_telegram"
+    android:layout_height="?attr/actionBarSize">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/toolbar_chat_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="2dp"
+        android:src="@drawable/my_photo_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toolbar_chat_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_chat_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Yuri Sika" />
+
+    <TextView
+        android:id="@+id/toolbar_chat_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/md_blue_50"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_chat_image"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_chat_image"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_chat_fullname"
+        tools:text="у мережі" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
+    <color name="green_chat">#B2DFCD</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#B0FDF5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="greenMain">#00d8ae</color>
     <color name="grey">#FDF1FF</color>
     <color name="pink">#EA71FF</color>
     <color name="red">#FF695B</color>
     <color name="colorBackground">#F8F8F8</color>
     <color name="grey_orig">#EDEDED</color>
-    <color name="grey_two">#CDCDCD</color>
+    <color name="grey_two">#D8D6D6</color>
     <color name="grey_text">#939292</color>
     <color name="toast">#0B0C15</color>
     <color name="text">#494949</color>
-    <color name="green">#65BD69</color>
+    <color name="green">#56B15B</color>
     <color name="text_sing">#9E7842</color>
     <color name="card_color">#4267B2</color>
-    <color name="color_edit">#E6E9FF</color>
+    <color name="color_edit">#EBEDFD</color>
     <color name="back">#F8F8F8</color>
     <color name="fon">#3A738F</color>
     <color name="fon_two">#67acdf</color>
     <color name="color_telegram">#5590BC</color>
+    <color name="color_telegram_fon">#385E7A</color>
     <color name="ripple">#CCCCCC</color>
+    <color name="green_b">#E2FAE2</color>
+    <color name="blue_b">#70AEDF</color>
+    <color name="transparent_dark">#A8434343</color>
 
 
+    <!-- Material BOTTOM UPLOAD colors -->
+    <color name="color_galleria">#479df2</color>
+    <color name="color_file">#37bcf1</color>
+    <color name="color_geo">#60c255</color>
+    <color name="color_contact">#f5bf4d</color>
+    <color name="color_music">#eb6161</color>
+    <color name="color_gif">#007adf</color>
 
     <!-- Material DEFAULT colors -->
     <color name="material_drawer_primary">#4FA0DD</color>

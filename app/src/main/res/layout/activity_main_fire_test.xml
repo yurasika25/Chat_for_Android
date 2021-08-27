@@ -41,6 +41,7 @@
                 android:background="@android:color/transparent"
                 android:gravity="bottom"
                 android:hint="@string/type"
+                android:textColorHint="@color/grey_text"
                 android:padding="6dp"
                 android:importantForAutofill="no"
                 android:paddingStart="15dp"

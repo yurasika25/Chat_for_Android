@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentEnterPhone">
+    tools:context=".screens.register.FragmentEnterPhone">
 
 
     <EditText
@@ -14,9 +14,10 @@
         android:textColor="@color/black"
         android:layout_margin="16dp"
         android:textColorHint="@color/grey_text"
-        android:hint="Введіть номер телефону..."
+        android:hint="@string/type_phone_number"
         android:theme="@style/AppThemeLight"
         android:maxLines="1"
+        android:textCursorDrawable="@drawable/cursor"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,9 @@
         android:layout_margin="16dp"
         android:src="@drawable/ic_btn_next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:focusable="true"
+        android:contentDescription="TODO" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

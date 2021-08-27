@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FragmentEnterCode">
+    tools:context=".screens.register.FragmentEnterCode">
 
 
     <ImageView
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:text="Введіть код"
+        android:text="@string/type_code"
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="Ми відправили SMS з кодом перевірки на Ваш телефон +380 96 79 27 303"
+        android:text="@string/sent_sms_in_your_phone"
         android:textColor="@color/grey_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,7 @@
         android:id="@+id/register_input_phone_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:theme="@style/AppThemeLight"
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"

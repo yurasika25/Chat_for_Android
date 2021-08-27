@@ -5,12 +5,12 @@ import android.net.Uri
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.testbasadata.R
-import com.example.testbasadata.fragments.FragmentSettings
-import com.example.testbasadata.utilits.USER
+import com.example.testbasadata.screens.FragmentContacts
+import com.example.testbasadata.screens.settings.FragmentSettings
+import com.example.testbasadata.utilits.appMainActivity
+import com.example.testbasadata.database.USER
 import com.example.testbasadata.utilits.downloadAndSetImage
 import com.example.testbasadata.utilits.replaceFragment
 import com.mikepenz.iconics.Iconics.applicationContext
@@ -25,7 +25,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
 import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader
 import com.mikepenz.materialdrawer.util.DrawerImageLoader
 
-class AppDriver(private val activityTelegram: AppCompatActivity, private val toolbar: Toolbar) {
+class AppDriver() {
 
     private lateinit var mDrawer: Drawer
     private lateinit var mHeader: AccountHeader
@@ -42,20 +42,20 @@ class AppDriver(private val activityTelegram: AppCompatActivity, private val too
 
     fun disableDrawer() {
         mDrawer.actionBarDrawerToggle?.isDrawerIndicatorEnabled = false
-        activityTelegram.supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        appMainActivity.supportActionBar?.setDisplayHomeAsUpEnabled(true)
         mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
-        toolbar.setNavigationOnClickListener {
-            activityTelegram.supportFragmentManager.popBackStack()
+        appMainActivity.mToolBar.setNavigationOnClickListener {
+            appMainActivity.supportFragmentManager.popBackStack()
         }
 
 
     }
 
     fun enableDrawer() {
-        activityTelegram.supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        appMainActivity.supportActionBar?.setDisplayHomeAsUpEnabled(false)
         mDrawer.actionBarDrawerToggle?.isDrawerIndicatorEnabled = true
         mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
-        toolbar.setNavigationOnClickListener {
+        appMainActivity.mToolBar.setNavigationOnClickListener {
             mDrawer.openDrawer()
 
         }
@@ -63,8 +63,8 @@ class AppDriver(private val activityTelegram: AppCompatActivity, private val too
 
     private fun createDrawer() {
         mDrawer = DrawerBuilder()
-            .withActivity(activityTelegram)
-            .withToolbar(toolbar)
+            .withActivity(appMainActivity)
+            .withToolbar(appMainActivity.mToolBar)
             .withActionBarDrawerToggle(true)
             .withSelectedItem(-1)
             .withAccountHeader(mHeader)
@@ -143,13 +143,8 @@ class AppDriver(private val activityTelegram: AppCompatActivity, private val too
                             position: Int,
                             drawerItem: IDrawerItem<*>
                         ): Boolean {
-                            Toast.makeText(
-                                applicationContext,
-                                position.toString(),
-                                Toast.LENGTH_SHORT
-                            ).show()
+                            replaceFragment(FragmentContacts())
                             return false
-
                         }
 
                     }),
@@ -207,8 +202,7 @@ class AppDriver(private val activityTelegram: AppCompatActivity, private val too
                             drawerItem: IDrawerItem<*>
                         ): Boolean {
                             when (position) {
-                                7 ->
-                                    activityTelegram.replaceFragment(FragmentSettings())
+                                7 -> replaceFragment(FragmentSettings())
                             }
                             return false
                         }
@@ -267,7 +261,7 @@ class AppDriver(private val activityTelegram: AppCompatActivity, private val too
             .withIcon(USER.photoUrl)
             .withIdentifier(200)
         mHeader = AccountHeaderBuilder()
-            .withActivity(activityTelegram)
+            .withActivity(appMainActivity)
             .withHeaderBackground(R.drawable.header)
             .addProfiles(
                 mCurrentProfile

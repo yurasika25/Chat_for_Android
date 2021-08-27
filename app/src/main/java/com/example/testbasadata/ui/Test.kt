@@ -5,9 +5,9 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testbasadata.LoginActivity
+import com.example.testbasadata.firstchat.LoginActivity
 import com.example.testbasadata.R
-import com.example.testbasadata.TestClassData
+import com.example.testbasadata.firstchat.TestClassData
 import com.example.testbasadata.dialogs.DialogExit
 import com.google.firebase.database.*
 

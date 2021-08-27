@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_choice"
+    android:layout_width="match_parent"
+    android:layout_height="79dp"
+    android:background="@drawable/rounded_corner"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="23dp"
+                android:paddingStart="23dp">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_attach_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_galleria"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_gallery"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_attach_file"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_file"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_file"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_attach_contact"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_geo"
+                    android:backgroundTint="@color/green"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_geo"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_attach_geo"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_contact"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_contact"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_attach_ge"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_music"
+                    android:contentDescription="@string/todo"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_music" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_attach_g"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_gif"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_gif" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/galleria"
+                    android:textColor="@color/color_telegram"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="54dp"
+                    android:text="@string/fail"
+                    android:textColor="@color/grey_text"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:text="@string/geo"
+                    android:textColor="@color/grey_text"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="@string/contact"
+                    android:textColor="@color/grey_text"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="46dp"
+                    android:text="@string/music"
+                    android:textColor="@color/grey_text"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="46dp"
+                    android:text="@string/gif"
+                    android:textColor="@color/grey_text"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
